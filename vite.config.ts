@@ -7,9 +7,12 @@ export default defineConfig({
   define: {
     global: 'globalThis',
   },
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: './src/test/setup.ts',
+  server: {
+    host: true,
+    allowedHosts: true,
+  },
+  preview: {
+    host: true,
+    allowedHosts: true,
   },
 }) 
